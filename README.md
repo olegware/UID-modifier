@@ -1,7 +1,9 @@
 # UID-modifier
 This file can be used to modify the UID of any writable IC card in a simple 2 step process using an Arduino and an RFID reader module. It can be used in cases where authentication cards must be cloned, for example in home or office settings. 
 
-I do **not** condone the use of this tool for illegal or destructive purposes and I am not responsible for its use in such cases. 
+I do **not** condone the use of this tool for illegal or destructive purposes and I am not responsible for its use in such cases.
+
+I am not responsible for the loss or damage of property or loss of access resulting from irresponsible use of this tool. 
 ### The RFID module is connected to the Arduino Uno using the following connections: 
 * VCC → 3.3V
 * GND → GND
@@ -27,4 +29,4 @@ E.g. If I wish to write the UID ` 77 8C 24 B7 `to my new card:
 #### Step 2
 
 Touch card that you wish to alter to RFID reader and read output in Serial Monitor. If the card scanned is a writable card, the UID will be altered. 
-
+If the card is not writable, or if a custom authentication key has been set then the UID change will fail.
