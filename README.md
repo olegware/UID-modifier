@@ -15,7 +15,7 @@ Then install the MFRC522 library (used for parsing and dumping card memory inclu
 ### Using the modifier 
 #### Step 1
 
-After uploading changeUID.ino to your Arduino, make sure to alter the bytes in line 10 to match what you wish your new UID to be. Include 0x to indicate haxadecimal. 
+After uploading changeUID.ino to your Arduino, make sure to alter the bytes in line 10 to match what you wish your new UID to be. Include 0x to indicate hexadecimal. 
 E.g. If I wish to write the UID ` 77 8C 24 B7 `to my new card:
 
  ``` byte newUID[] = {0x..., 0x..., 0x..., 0x...}; // New UID (4 bytes)  ```
